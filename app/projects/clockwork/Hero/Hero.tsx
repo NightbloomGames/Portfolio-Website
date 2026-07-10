@@ -5,7 +5,8 @@ export default function Hero() {
            {/* Screenshot */}
            <img src = "/ClockworkTrials.png" alt = "Clockwork Trials" className = "h-full w-full object-cover object-center"/>
            {/* Gradient */}
-           <div className="absolute inset-0 bg-gradient-to-t from-cyan-950/60 via-transparent to-transparent"/>
+           <div className = "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"/>
+           <div className = "absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(6,182,212,0.18),transparent_60%)]"/>
            {/* Title */} 
            <div className="absolute bottom-16 left-16 z-10">
             <p className = "uppercase tracking-[0.4em] text-cyan-300"> Featured Project</p>
