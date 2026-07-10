@@ -12,9 +12,11 @@ export default function Hero() {
           and thoughtful design. My work focuses on building mechanics that feel responsive, rewarding, and memorable.</p>
           
           <div className = "mt-12 flex gap-5">
-            <button onClick={() => {document.getElementById("featured-projects") ?.scrollIntoView({behavior: "smooth",}); }} className ="rounded-full border border-purple-400 bg-purple-500/20 
+            <button onClick={() => {document.getElementById("featured-projects") ?.scrollIntoView({behavior: "smooth",}); }} className ="rounded-full border
+            border-purple-400 bg-purple-500/20 
             px-8 py-3 transition hover:bg-purple-500/30"> Explore Projects</button>
-            <a href = "/Flat2VR Studios Resume.pdf" target = "_blank" rel = "noopener noreferrer" className = "rounded-full border border-white/20 px-8 py-3 transition hover:bg-white/10"> 
+            <a href = "/Flat2VR Studios Resume.pdf" target = "_blank" rel = "noopener noreferrer" className ="rounded-full border border-white/20 px-8 py-3
+            transition hover:bg-white/10"> 
             Resume ↗</a>
           </div>
 

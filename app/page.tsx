@@ -27,7 +27,8 @@ export default function Home() {
     <main className = "relative min-h-screen bg-black">
 
       {/* Portfolio */}
-      <div className = {`transition-opacity duration-1000 ${introComplete ? "opacity-100" : "opacity-0 pointer-events-none"}`}> <Portfolio/></div>
+      <div className = {`transition-all duration-[1800ms] ease-out ${introComplete ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}><Portfolio/>
+      </div>
 
       {/* Intro */}
       {showIntro && (<div className = "fixed inset-0 z-50"> <IntroScreen onComplete = {() => {setShowIntro(false); setIntroComplete(true);}}/></div>
