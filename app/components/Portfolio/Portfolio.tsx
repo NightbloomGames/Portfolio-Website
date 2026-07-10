@@ -3,6 +3,9 @@ import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
 import OtherProjects from "../OtherProjects/OtherProjects";
 import Experience from "./Experience/Experience";
 import Contact from "./Contact/Contact";
+import Reveal from "../ui/Reveal";
+import Navbar from "../Navbar/Navbar";
+import BackToTop from "../BackToTop/BackToTop";
 
 export default function Portfolio() {
   return (
@@ -13,11 +16,25 @@ export default function Portfolio() {
       <div className = "fixed inset-0 -z-0 bg-[radial-gradient(circle_at_bottom,rgba(185,28,28,0.12),transparent_45%)]"/>
       {/* Content */}
       <div className = "relative z-10">
+        <Navbar/>
       <Hero/>
-      <FeaturedProjects/>
-      <OtherProjects/>
-      <Experience/>
-      <Contact/>
+      <Reveal>
+        <FeaturedProjects/>
+      </Reveal>
+      
+      <Reveal>
+        <OtherProjects/>
+      </Reveal>
+      
+      <Reveal>
+        <Experience/>
+      </Reveal>
+      
+      <Reveal>
+        <Contact/>
+      </Reveal>
+
+      <BackToTop/>
       </div>
     </main>
   );

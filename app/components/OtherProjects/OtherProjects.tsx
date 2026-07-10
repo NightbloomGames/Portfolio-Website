@@ -31,14 +31,15 @@ export default function OtherProjects() {
             <p className = "mt-6 max-w-3xl text-lg leading-8 text-white/70"> Additional projects showcasing my experience with gameplay programming, 
             systems design, and interactive experiences.</p>
             <div className = "mt-16 grid gap-8 md:grid-cols-2"> {projects.map((project) => (<div key = {project.title} className ="rounded-3xl border
-            border-white/10 bg-white/5 p-8 backdrop-blur-md transition hover:-translate-y-2 hover:border-purple-400/40">
+            border-white/10 bg-white/5 p-8 backdrop-blur-md transition hover:-translate-y-2 hover:border-purple-400/40 
+            hover:shadow-[0_0_40px_rgba(168,85,247,0.15)]">
                 <h3 className = "text-3xl font-bold"> {project.title}</h3>
                 <p className = "mt-5 leading-8 text-white/70"> {project.description}</p>
                 <div className = "mt-6 flex flex-wrap gap-3"> {project.tags.map((tag) => (<span key = {tag} className ="rounded-full border 
                 border-white/20 px-3 py-1 text-sm text-white/70"> {tag}</span> ))}
                 </div>
                 <Link href = {project.link} className = "mt-8 inline-flex rounded-full border border-white/20 px-6 py-3 transition hover:bg-white/10">
-                View Project →</Link>
+                Enter Dossier →</Link>
 
                 </div>))}
                 

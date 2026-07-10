@@ -33,7 +33,8 @@ export default function SoulrendShowcase() {
               </div>
 
               </div>
-            <Link href = "/projects/soulrend" className = "mt-12 inline-flex rounded-full border border-white/20 px-8 py-3 transition hover:bg-white/10"> Enter Dossier →</Link>
+            <Link href = "/projects/soulrend" className = "mt-12 inline-flex rounded-full border border-white/20 px-8 py-3 transition hover:bg-white/10"> 
+            Enter Dossier →</Link>
           </div>
         </div>
   
