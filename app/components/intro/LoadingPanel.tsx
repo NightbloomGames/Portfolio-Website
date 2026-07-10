@@ -193,7 +193,7 @@ useEffect(() => {
 
   const signalTimer = setTimeout(() => {
     onComplete();
-  }, 1200);
+  }, 2000);
 
   return () => clearTimeout(signalTimer);
 }, [phase, onComplete]);
