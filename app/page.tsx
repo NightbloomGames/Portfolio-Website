@@ -24,32 +24,13 @@ export default function Home() {
   }, [searchParams]);
 
   return (
-    <main className="relative min-h-screen bg-black">
+    <main className = "relative min-h-screen bg-black">
 
       {/* Portfolio */}
-      <div
-        className ={`
-          transition-opacity duration-1000
-          ${
-            introComplete
-              ? "opacity-100"
-              : "opacity-0 pointer-events-none"
-          }
-        `}
-      >
-        <Portfolio />
-      </div>
+      <div className = {`transition-opacity duration-1000 ${introComplete ? "opacity-100" : "opacity-0 pointer-events-none"}`}> <Portfolio/></div>
 
       {/* Intro */}
-      {showIntro && (
-        <div className="fixed inset-0 z-50">
-          <IntroScreen
-            onComplete={() => {
-              setShowIntro(false);
-              setIntroComplete(true);
-            }}
-          />
-        </div>
+      {showIntro && (<div className = "fixed inset-0 z-50"> <IntroScreen onComplete = {() => {setShowIntro(false); setIntroComplete(true);}}/></div>
       )}
 
     </main>
